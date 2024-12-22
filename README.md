@@ -30,9 +30,10 @@ Analyze the impact of integrating a significant new load into an existing high v
 - Identify possible technical solutions for resolving any identified violations.
 - Integrate the identified solutions in the case and validate their effectiveness 
 
-**Step 5: Data Visualization**
+**Step 5: Reporting**
 
-- Develop visualizations to aid in analyzing the results.
+- Report the results of your analysis, including any constraints or violations identified.
+- Consider adding visualizations to aid in analyzing the results.
 
 ## Guidelines
 
