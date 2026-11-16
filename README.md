@@ -13,17 +13,21 @@ Analyze the impact of integrating a significant new load into an existing high v
 - Use the provided `csv` files to synthesize a power flow case of the power grid.
 - Ensure that the base case converges.
 
+The input files are `buses.csv`, `generators.csv`, `lines.csv`, `loads.csv`, `trafos.csv` and `shunts.csv`.
+In `shunts.csv`, `Nominal Mvar` is the reactive power of a fixed shunt at 1.0 pu voltage (positive = capacitive).
+
 **Step 2: Perform Contingency Analysis**
 
 - Develop an N-1 contingency analysis tool using Python or any open-source software of your choice.
 - Run the tool on your power flow case to simulate various outage scenarios.
-- Report all thermal overloads and voltage violations identified during the contingencies.
+- Report all thermal overloads and voltage violations identified during the contingencies, as well as any contingencies that do not solve or that disconnect load or generation.
 
 **Step 3: Integrate the New Data Center Load**
 
 - Incorporate a 300 MW data center load at bus **242** into your power flow model.
 - Re-run the contingency analysis with the new load included.
 - Identify and report any constraints or violations introduced due to the additional load.
+- Distinguish constraints that already exist without the data center from those that are new or made worse by it, and state the criteria you used.
 
 **Step 4: Solutioning**
 
